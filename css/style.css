@@ -1,0 +1,392 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: rgb(193, 163, 98);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navegación */
+.menu-navegacion ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  background-color: #222;
+}
+
+.menu-navegacion li {
+  margin: 0 1rem;
+}
+
+.menu-navegacion a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(193, 163, 98);
+  border: 2px solid rgb(193, 163, 98);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(193, 163, 98);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+/* Sección de Servicios */
+.servicios {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(193, 163, 98);
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+}
+
+.tarjeta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+}
+
+/* Pie de Página */
+.footer {
+  background-color: #222;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col button {
+  background-color: rgb(193, 163, 98);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #444;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.comunidad {
+  background-color: rgb(193, 163, 98);
+
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.comunidad h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contador .numero {
+  font-size: 4rem;
+  font-weight: bold;
+  display: inline-block;
+  animation: aparecer 2s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.contador p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 2s;
+}
+
+/* Animaciones */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.animado::before {
+  content: "280";
+  animation: contar 2.5s steps(20, end) forwards;
+}
+
+@keyframes contar {
+  0% {
+    content: "280";
+  }
+  20% {
+    content: "290";
+  }
+  40% {
+    content: "295";
+  }
+  60% {
+    content: "297";
+  }
+  80% {
+    content: "299";
+  }
+  100% {
+    content: "300";
+  }
+}
+
+/* Carrusel solo CSS */
+.carrusel-testimonios {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+/* Ocultamos los radios */
+.carrusel-testimonios input {
+  display: none;
+}
+
+/* Contenedor de los testimonios: ahora usamos absolute + opacity para evitar ancho excesivo */
+.testimonios-inner {
+  position: relative;
+  height: 220px; /* Un poco más alto para mejor centrado visual */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.testimonios {
+  padding-top: 80px; /* Aumenta la separación superior */
+  padding-bottom: 100px; /* Asegura espacio con el footer */
+  background-color: #f4f4f4;
+}
+
+.testimonios-inner {
+  height: 220px; /* Un poco más alto para mejor centrado visual */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.testimonio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonios h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(193, 163, 98);
+}
+
+.testimonio strong {
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+/* Mostrar el testimonio activo */
+#t1:checked ~ .testimonios-inner .testimonio:nth-child(1),
+#t2:checked ~ .testimonios-inner .testimonio:nth-child(2),
+#t3:checked ~ .testimonios-inner .testimonio:nth-child(3) {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Botones de navegación */
+.navegacion-testimonios {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.navegacion-testimonios label {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#t1:checked ~ .navegacion-testimonios label[for="t1"],
+#t2:checked ~ .navegacion-testimonios label[for="t2"],
+#t3:checked ~ .navegacion-testimonios label[for="t3"] {
+  background-color: rgb(212, 175, 55); /* #D4AF37 */
+}

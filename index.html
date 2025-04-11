@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio - Espartacus GYM</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1>Espartacus GYM</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./clases.html">Servicios</a></li>
+        <li><a href="./entrenadores.html">Entrenadores</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./precios.html">Precios</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="background-video">
+        <source
+          src="videos/mixkit-man-doing-push-ups-using-dumbbells-40248-hd-ready.mp4"
+          type="video/mp4"
+        />
+        Tu navegador no soporta el video en HTML5.
+      </video>
+      <div class="hero-content">
+        <h1>TRANSFORMA TU VIDA</h1>
+        <p>Únete al mejor gimnasio de la ciudad</p>
+        <button class="button">INSCRIBITE YA</button>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Entrenamiento Personal</h3>
+          <p>Programas personalizados para alcanzar tus objetivos.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Clases Grupales</h3>
+          <p>Variedad de clases para todos los niveles.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Área de Pesas</h3>
+          <p>Equipos de última generación para tu entrenamiento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="comunidad">
+      <h2>NUESTRA COMUNIDAD</h2>
+      <div class="contador">
+        <span class="numero">+<span class="animado"></span></span>
+        <p>Socios Satisfechos</p>
+      </div>
+    </section>
+
+    <section class="testimonios">
+      <h2>Testimonios</h2>
+
+      <div class="carrusel-testimonios">
+        <input type="radio" name="carrusel" id="t1" checked />
+        <input type="radio" name="carrusel" id="t2" />
+        <input type="radio" name="carrusel" id="t3" />
+
+        <div class="testimonios-inner">
+          <div class="testimonio">
+            <p>
+              "Desde que entreno en Fuerza Total, mi salud ha mejorado
+              muchísimo. ¡100% recomendado!"
+            </p>
+            <h4>- Juan Pérez</h4>
+          </div>
+          <div class="testimonio">
+            <p>
+              "Las clases grupales son dinámicas y muy motivadoras. Los profes
+              son lo más."
+            </p>
+            <h4>- María López</h4>
+          </div>
+          <div class="testimonio">
+            <p>
+              "Equipo de primera, excelente ambiente y resultados reales.
+              ¡Gracias Espartacus GYM!"
+            </p>
+            <h4>- Diego Martínez</h4>
+          </div>
+        </div>
+
+        <div class="navegacion-testimonios">
+          <label for="t1"></label>
+          <label for="t2"></label>
+          <label for="t3"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>SUBSCRÍBETE A<br /><strong>NUESTRO BOLETÍN</strong></h3>
+        <input type="email" placeholder="Correo electrónico" />
+        <button>SUBSCRIBIRSE</button>
+      </div>
+
+      <div class="footer-col">
+        <h3>Conecta con nosotros</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>NUESTRA UBICACIÓN</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9852513059694!2d-74.08720532524598!3d4.602739642448894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c30c8e68f3%3A0x2fd13c9be3ecad2f!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1712703901551!5m2!1ses!2sco"
+          width="250"
+          height="150"
+          style="border: 0; border-radius: 15px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Espartacus GYM. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

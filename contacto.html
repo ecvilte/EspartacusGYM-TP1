@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto - Espartacus GYM</title>
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Espartacus GYM</h1>
+    </header>
+
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./clases.html">Servicios</a></li>
+        <li><a href="./entrenadores.html">Entrenadores</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./precios.html">Precios</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <video autoplay muted loop playsinline class="background-video">
+        <source
+          src="videos/mixkit-man-doing-push-ups-using-dumbbells-40248-hd-ready.mp4"
+          type="video/mp4"
+        />
+        Tu navegador no soporta el video en HTML5.
+      </video>
+      <div class="hero-content">
+        <h1>TRANSFORMA TU VIDA</h1>
+        <p>Únete al mejor gimnasio de la ciudad</p>
+        <button class="button">INSCRIBITE YA</button>
+      </div>
+    </section>
+
+    <section class="contacto-avanzado">
+      <h2>Contáctanos</h2>
+      <form id="formulario-contacto">
+        <div class="grid-form">
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <input
+            type="tel"
+            name="telefono"
+            placeholder="Teléfono"
+            pattern="[0-9]{10}"
+            required
+          />
+          <select name="asunto" required>
+            <option value="" disabled selected>Selecciona un asunto</option>
+            <option value="informacion">Más información</option>
+            <option value="inscripcion">Inscripción</option>
+            <option value="soporte">Soporte técnico</option>
+          </select>
+        </div>
+        <textarea
+          name="mensaje"
+          placeholder="Escribe tu mensaje aquí..."
+          required
+        ></textarea>
+        <button type="submit" class="button">Enviar</button>
+        <div class="spinner"></div>
+      </form>
+
+      <div id="modal-confirmacion">
+        <div class="modal-contenido">
+          <p>¡Mensaje enviado correctamente!</p>
+          <button>Cerrar</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>SUBSCRÍBETE A<br /><strong>NUESTRO BOLETÍN</strong></h3>
+        <input type="email" placeholder="Correo electrónico" />
+        <button>SUBSCRIBIRSE</button>
+      </div>
+
+      <div class="footer-col">
+        <h3>Conecta con nosotros</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>NUESTRA UBICACIÓN</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9852513059694!2d-74.08720532524598!3d4.602739642448894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c30c8e68f3%3A0x2fd13c9be3ecad2f!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1712703901551!5m2!1ses!2sco"
+          width="250"
+          height="150"
+          style="border: 0; border-radius: 15px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Espartacus GYM - Todos los derechos reservados
+      </div>
+    </footer>
+  </body>
+</html>

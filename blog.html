@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BLOG - Espartacus GYM</title>
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1>Espartacus GYM</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./clases.html">Servicios</a></li>
+        <li><a href="./entrenadores.html">Entrenadores</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./precios.html">Precios</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="background-video">
+        <source
+          src="videos/mixkit-man-doing-push-ups-using-dumbbells-40248-hd-ready.mp4"
+          type="video/mp4"
+        />
+        Tu navegador no soporta el video en HTML5.
+      </video>
+      <div class="hero-content">
+        <h1>TRANSFORMA TU VIDA</h1>
+        <p>Únete al mejor gimnasio de la ciudad</p>
+        <button class="button">INSCRIBITE YA</button>
+      </div>
+    </section>
+
+    <section class="blog-newspaper">
+      <h2>Blog Espartacus GYM</h2>
+
+      <input type="radio" name="filtro-blog" id="todos" checked />
+      <input type="radio" name="filtro-blog" id="salud" />
+      <input type="radio" name="filtro-blog" id="nutricion" />
+      <input type="radio" name="filtro-blog" id="motivacion" />
+      <div class="blog-filtros">
+        <div class="filtro-labels">
+          <label for="todos">Todos</label>
+          <label for="salud">Salud</label>
+          <label for="nutricion">Nutrición</label>
+          <label for="motivacion">Motivación</label>
+        </div>
+      </div>
+
+      <!-- Artículos estilo periódico -->
+      <div class="grid-newspaper">
+        <article class="blog-item salud reveal">
+          <h3>Entrenamiento y Salud Mental</h3>
+          <p>
+            El ejercicio regular puede mejorar tu estado de ánimo, autoestima y
+            reducir el estrés.
+          </p>
+          <span class="tag">Salud</span>
+        </article>
+
+        <article class="blog-item nutricion reveal">
+          <h3>Proteínas: ¿cuántas necesitas?</h3>
+          <p>
+            Descubrí cómo calcular tus requerimientos diarios según tu
+            entrenamiento.
+          </p>
+          <span class="tag">Nutrición</span>
+        </article>
+
+        <article class="blog-item motivacion reveal">
+          <h3>Motivación en tiempos difíciles</h3>
+          <p>
+            ¿No querés entrenar? Acá te contamos cómo superar esos días bajos.
+          </p>
+          <span class="tag">Motivación</span>
+        </article>
+      </div>
+
+      <!-- Comentarios -->
+      <div class="comentarios-blog">
+        <h3>Comentarios</h3>
+        <div class="comentario">
+          <div class="avatar"></div>
+          <div class="contenido-comentario">
+            <strong>Luis</strong>
+            <p>Excelente nota sobre nutrición, me sirvió un montón.</p>
+          </div>
+        </div>
+        <div class="comentario">
+          <div class="avatar"></div>
+          <div class="contenido-comentario">
+            <strong>María</strong>
+            <p>Me encantó el enfoque psicológico de los entrenamientos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>SUBSCRÍBETE A<br /><strong>NUESTRO BOLETÍN</strong></h3>
+        <input type="email" placeholder="Correo electrónico" />
+        <button>SUBSCRIBIRSE</button>
+      </div>
+
+      <div class="footer-col">
+        <h3>Conecta con nosotros</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>NUESTRA UBICACIÓN</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9852513059694!2d-74.08720532524598!3d4.602739642448894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c30c8e68f3%3A0x2fd13c9be3ecad2f!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1712703901551!5m2!1ses!2sco"
+          width="250"
+          height="150"
+          style="border: 0; border-radius: 15px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Espartacus GYM. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planes de Precios - Espartacus GYM</title>
+    <link rel="stylesheet" href="css/precios.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Espartacus GYM</h1>
+    </header>
+
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./clases.html">Servicios</a></li>
+        <li><a href="./entrenadores.html">Entrenadores</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./precios.html">Precios</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <video class="background-video" autoplay muted loop>
+        <source
+          src="videos/mixkit-man-doing-push-ups-using-dumbbells-40248-hd-ready.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero-content">
+        <h1>TRANSFORMA TU VIDA</h1>
+        <p>Únete al mejor gimnasio de la ciudad</p>
+        <a href="#precios" class="button">Inscribite Ya</a>
+      </div>
+    </section>
+
+    <section id="precios" class="seccion-precios">
+      <form class="precios-container">
+        <input type="radio" name="plan" id="mensual" checked />
+        <input type="radio" name="plan" id="anual" />
+        <div class="switch-wrapper">
+          <div class="switch">
+            <label for="mensual">Mensual</label>
+            <label for="anual">Anual</label>
+            <div class="slider"></div>
+          </div>
+        </div>
+
+        <div class="tabla-precios-wrapper">
+          <table class="tabla-precios">
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th class="precio-col">Precio</th>
+                <th>Acceso</th>
+                <th>Entrenador</th>
+                <th>Clases Grupales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Básico</td>
+                <td>
+                  <span class="precio precio-mensual">$4000</span>
+                  <span class="precio precio-anual">$40.000</span>
+                </td>
+                <td>Limitado</td>
+                <td>No</td>
+                <td>1x semana</td>
+              </tr>
+              <tr>
+                <td>Intermedio</td>
+                <td>
+                  <span class="precio precio-mensual">$7000</span>
+                  <span class="precio precio-anual">$70.000</span>
+                </td>
+                <td>Completo</td>
+                <td>Sí</td>
+                <td>3x semana</td>
+              </tr>
+              <tr>
+                <td>Premium</td>
+                <td>
+                  <span class="precio precio-mensual">$10.000</span>
+                  <span class="precio precio-anual">$95.000</span>
+                </td>
+                <td>Ilimitado</td>
+                <td>Personal</td>
+                <td>Ilimitado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>SUBSCRÍBETE A<br /><strong>NUESTRO BOLETÍN</strong></h3>
+        <input type="email" placeholder="Correo electrónico" />
+        <button>SUBSCRIBIRSE</button>
+      </div>
+
+      <div class="footer-col">
+        <h3>Conecta con nosotros</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>NUESTRA UBICACIÓN</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9852513059694!2d-74.08720532524598!3d4.602739642448894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c30c8e68f3%3A0x2fd13c9be3ecad2f!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1712703901551!5m2!1ses!2sco"
+          width="250"
+          height="150"
+          style="border: 0; border-radius: 15px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Espartacus GYM. Todos los derechos reservados.</p>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+/* === Reset y generales === */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+header {
+  background-color: rgb(193, 163, 98);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-navegacion ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  background-color: #222;
+}
+
+.menu-navegacion li {
+  margin: 0 1rem;
+}
+
+.menu-navegacion a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(193, 163, 98);
+  border: 2px solid rgb(193, 163, 98);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(193, 163, 98);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+/* === Precios === */
+.seccion-precios {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+/* Toggle tipo switch */
+.switch-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.switch {
+  display: inline-flex;
+  position: relative;
+  background: #ddd;
+  border-radius: 30px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.switch label {
+  padding: 0.6rem 2.5rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s;
+  color: #444;
+  text-align: center;
+  flex: 1;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(193, 163, 98);
+  border-radius: 30px;
+  transition: left 0.3s ease;
+  z-index: 1;
+}
+
+#anual:checked ~ .switch .slider {
+  left: 50%;
+}
+
+#mensual:checked ~ .switch label[for="mensual"],
+#anual:checked ~ .switch label[for="anual"] {
+  color: white;
+}
+
+/* Tabla */
+.tabla-precios {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.tabla-precios th {
+  background-color: rgb(193, 163, 98);
+  color: white;
+}
+
+.tabla-precios td:hover {
+  background-color: #f9f1df;
+}
+
+/* Precios animados */
+.precio-mensual,
+.precio-anual {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Mostrar precio correcto según radio seleccionado */
+form #mensual:checked ~ .tabla-precios-wrapper .precio-mensual {
+  opacity: 1;
+  position: static;
+}
+
+form #mensual:checked ~ .tabla-precios-wrapper .precio-anual {
+  opacity: 0;
+  position: absolute;
+}
+
+form #anual:checked ~ .tabla-precios-wrapper .precio-anual {
+  opacity: 1;
+  position: static;
+}
+
+form #anual:checked ~ .tabla-precios-wrapper .precio-mensual {
+  opacity: 0;
+  position: absolute;
+}
+
+form #mensual:checked ~ .tabla-precios-wrapper .precio-mensual
+
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 0.85rem;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col button {
+  background-color: rgb(193, 163, 98);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #444;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}

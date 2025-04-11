@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clases - Espartacus GYM</title>
+    <link rel="stylesheet" href="css/clases.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Espartacus GYM</h1>
+    </header>
+
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./clases.html">Servicios</a></li>
+        <li><a href="./entrenadores.html">Entrenadores</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./precios.html">Precios</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <video autoplay muted loop playsinline class="background-video">
+        <source
+          src="videos/mixkit-man-doing-push-ups-using-dumbbells-40248-hd-ready.mp4"
+          type="video/mp4"
+        />
+        Tu navegador no soporta el video en HTML5.
+      </video>
+      <div class="hero-content">
+        <h1>TRANSFORMA TU VIDA</h1>
+        <p>Únete al mejor gimnasio de la ciudad</p>
+        <button class="button">INSCRIBITE YA</button>
+      </div>
+    </section>
+
+    <section class="clases">
+      <!-- Filtros funcionales -->
+      <input type="radio" name="filtro" id="all" checked hidden />
+      <input type="radio" name="filtro" id="musculacion" hidden />
+      <input type="radio" name="filtro" id="crossfit" hidden />
+      <input type="radio" name="filtro" id="yoga" hidden />
+      <input type="radio" name="filtro" id="spinning" hidden />
+
+      <div class="filters">
+        <label for="all">Todos</label>
+        <label for="musculacion">Musculación</label>
+        <label for="crossfit">CrossFit</label>
+        <label for="yoga">Yoga</label>
+        <label for="spinning">Spinning</label>
+      </div>
+
+      <!-- Galería -->
+      <section class="gallery">
+        <div class="card musculacion">
+          <img src="../imagenes/mujer-gym.png" alt="Musculación" />
+          <div class="card-text">Musculación</div>
+        </div>
+        <div class="card crossfit">
+          <img src="../imagenes/hombre-crossfit..png" alt="CrossFit" />
+          <div class="card-text">CrossFit</div>
+        </div>
+        <div class="card yoga">
+          <img src="../imagenes/mujer-yoga.png" alt="Yoga" />
+          <div class="card-text">Yoga</div>
+        </div>
+        <div class="card spinning">
+          <img src="../imagenes/personas-spinning.png" alt="Spinning" />
+          <div class="card-text">Spinning</div>
+        </div>
+      </section>
+    </section>
+
+    <section class="tabla-horarios">
+      <h3>Horarios Semanales</h3>
+      <div class="tabla-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>08:00</th>
+              <th>10:00</th>
+              <th>14:00</th>
+              <th>18:00</th>
+              <th>20:00</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Día">Lunes</td>
+              <td data-label="08:00">Musculación</td>
+              <td data-label="10:00">Yoga</td>
+              <td data-label="14:00">CrossFit</td>
+              <td data-label="18:00">Spinning</td>
+              <td data-label="20:00">Musculación</td>
+            </tr>
+            <tr>
+              <td data-label="Día">Martes</td>
+              <td data-label="08:00">CrossFit</td>
+              <td data-label="10:00">Spinning</td>
+              <td data-label="14:00">Yoga</td>
+              <td data-label="18:00">Musculación</td>
+              <td data-label="20:00">CrossFit</td>
+            </tr>
+            <tr>
+              <td data-label="Día">Miércoles</td>
+              <td data-label="08:00">Yoga</td>
+              <td data-label="10:00">Musculación</td>
+              <td data-label="14:00">Spinning</td>
+              <td data-label="18:00">CrossFit</td>
+              <td data-label="20:00">Yoga</td>
+            </tr>
+            <tr>
+              <td data-label="Día">Jueves</td>
+              <td data-label="08:00">Spinning</td>
+              <td data-label="10:00">Yoga</td>
+              <td data-label="14:00">Musculación</td>
+              <td data-label="18:00">CrossFit</td>
+              <td data-label="20:00">Spinning</td>
+            </tr>
+            <tr>
+              <td data-label="Día">Viernes</td>
+              <td data-label="08:00">Musculación</td>
+              <td data-label="10:00">CrossFit</td>
+              <td data-label="14:00">Yoga</td>
+              <td data-label="18:00">Spinning</td>
+              <td data-label="20:00">Musculación</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>SUBSCRÍBETE A<br /><strong>NUESTRO BOLETÍN</strong></h3>
+        <input type="email" placeholder="Correo electrónico" />
+        <button>SUBSCRIBIRSE</button>
+      </div>
+
+      <div class="footer-col">
+        <h3>Conecta con nosotros</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>NUESTRA UBICACIÓN</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9852513059694!2d-74.08720532524598!3d4.602739642448894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c30c8e68f3%3A0x2fd13c9be3ecad2f!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1712703901551!5m2!1ses!2sco"
+          width="250"
+          height="150"
+          style="border: 0; border-radius: 15px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Espartacus GYM. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
